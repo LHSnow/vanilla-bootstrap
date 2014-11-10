@@ -1,39 +1,44 @@
-// # Stridshammaren
+// # Slate
+//
+// No styleguide reference.
 
-@import "slate.less";
+@import "../style";
+@import "../../bower_components/bootswatch/slate/variables";
+@import "../../bower_components/bootswatch/slate/bootswatch";
 
-.navbar-brand img {
-    height: 70px;
-    margin-top: -25px;
-}
-
-.BoxButtons.BoxNewDiscussion,
-.PageControls.Top,
-.sticky-footer {
-    display: none;
-}
-
-.page-content h1 {
-   font-size: 18px;
-}
-
-.page-content {
-    h1.HomepageTitle,
-    h1.PageTitle {
-        margin: 10px 0 10px;
+.Button {
+  &,
+  &.Primary,
+  &.Danger {
+    &,
+    &:hover,
+    &:focus {
+      &:extend(.btn:hover);
     }
+  }
 }
 
+.NavButton {
+  &,
+  &:hover,
+  &:focus {
+    &:extend(.btn:hover);
+  }
+}
 
-.DataList .ItemDiscussion {
-    &:.New,
-    &:.Unread {
-        background-color: #272135;
+.Pager {
+  > span {
+    &,
+    &:hover,
+    &:focus {
+      &:extend(.pagination > li.disabled > a);
     }
+  }
 }
 
-//hide pagination items 5 to 7, nobody needs that many pages to choose from
-//makes pagination fit tiny screens on one line even when the number of pages in the range of three or four digits
-.Pager.NumberedPager.NumberedPager a:nth-child(n+6):nth-child(-n+8) {
-    display: none;
+.MessageList .Item {
+  &:hover,
+  &:focus {
+    background-color: lighten(@body-bg, 5%);
+  }
 }
