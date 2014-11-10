@@ -32,6 +32,8 @@
     }
 }
 
-.Pager.NumberedPager.NumberedPager a:nth-child() {
-
+//hide pagination items 5 to 7, nobody needs that many pages to choose from
+//makes pagination fit tiny screens on one line even when the number of pages in the range of three or four digits
+.Pager.NumberedPager.NumberedPager a:nth-child(n+6):nth-child(-n+8) {
+    display: none;
 }
