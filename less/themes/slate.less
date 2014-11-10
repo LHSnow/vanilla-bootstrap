@@ -1,47 +1,6 @@
-// # Slate
-//
-// No styleguide reference.
+// # Stridshammaren
 
-@import "../style";
-@import "../../bower_components/bootswatch/slate/variables";
-@import "../../bower_components/bootswatch/slate/bootswatch";
-
-.Button {
-  &,
-  &.Primary,
-  &.Danger {
-    &,
-    &:hover,
-    &:focus {
-      &:extend(.btn:hover);
-    }
-  }
-}
-
-.NavButton {
-  &,
-  &:hover,
-  &:focus {
-    &:extend(.btn:hover);
-  }
-}
-
-.Pager {
-  > span {
-    &,
-    &:hover,
-    &:focus {
-      &:extend(.pagination > li.disabled > a);
-    }
-  }
-}
-
-.MessageList .Item {
-  &:hover,
-  &:focus {
-    background-color: lighten(@body-bg, 5%);
-  }
-}
+@import "slate.less";
 
 .navbar-brand img {
     height: 70px;
@@ -71,4 +30,8 @@
     &:.Unread {
         background-color: #272135;
     }
+}
+
+.Pager.NumberedPager.NumberedPager a:nth-child() {
+
 }
