@@ -2,3 +2,5 @@
 bower_components/
 node_modules/
 vanilla-bootstrap.iml
+design/custom_*
+design/style.css
