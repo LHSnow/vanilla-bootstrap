@@ -30,6 +30,7 @@ $ThemeInfo['bootstrap'] = array(
       'Slate'     => '%s_slate',
       'Spacelab'  => '%s_spacelab',
       'Superhero' => '%s_superhero',
+      'Stridshammaren' => '%s_stridshammaren',
       'United'    => '%s_united',
       'Yeti'      => '%s_yeti'
     )
